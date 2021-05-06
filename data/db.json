@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "Blog Example",
+            "body": "Here is some content for this JSON file",
+            "author": "Ed",
+            "id": 1
+        },
+        {
+            "title": "Chicken Noodle Soup",
+            "body": "Today I had some Chicken Noodle Soup",
+            "author": "Edd",
+            "id": 2
+        }
+    ]
+}
