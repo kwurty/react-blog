@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
+import useFetch from './useFetch';
 const Home = () => {
     // let name = 'mario';
 
@@ -16,29 +17,14 @@ const Home = () => {
     //     setName('luigi');
     //     setAge(32);
     // }
-    const [blogs, setBlogs] = useState(null)
-    const [isLoading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+
 
     // You cannot use ASYNC for this. Promises work, but for ASYNC to be useable, you need to create a separate function that is async and call it here
     // useEffect is generally used to 
-    useEffect(() => {
-        setLoading(true);
-        setError(null);
-        fetch('http://localhost:8000/blogs')
-            .then(res => {
-                if (!res.ok) throw Error('Unable to retrieve data from endpoint')
-                return res.json()
-            })
-            .then((data) => {
-                setLoading(false);
-                setBlogs(data);
-            })
-            .catch((e) => {
-                setLoading(false);
-                setError(e.message);
-            })
-    }, [])
+
+
+    // so this is a cool way to rename a destructuring. put WHAT you want and then a colon and then WHAT you want it to be called
+    const { data: blogs, isLoading, error } = useFetch('http://localhost:8000/blogs');
 
     return (
         <div className="home">

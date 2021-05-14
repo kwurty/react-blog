@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // PROPS must be received in the child component by simply adding it as a parameter
 const BlogList = (props) => {
     const blogs = props.blogs;
@@ -9,7 +11,9 @@ const BlogList = (props) => {
             */}
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
-                    <h2> {blog.title}</h2>
+                    <Link to={`/blog/${blog.id}`}>
+                        <h2> {blog.title} </h2>
+                    </Link>
                     <p>Written by: {blog.author}</p>
                 </div>
             ))}
