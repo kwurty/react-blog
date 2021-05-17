@@ -1,16 +1,10 @@
 {
-    "blogs": [
-        {
-            "title": "Blog Example",
-            "body": "Here is some content for this JSON file",
-            "author": "Ed",
-            "id": 1
-        },
-        {
-            "title": "Chicken Noodle Soup",
-            "body": "Today I had some Chicken Noodle Soup",
-            "author": "Edd",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "It's just the start",
+      "body": "You know who it is!",
+      "author": "Mario",
+      "id": 1
+    }
+  ]
 }

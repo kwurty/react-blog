@@ -1,6 +1,7 @@
 *{ 
   margin: 0;
   color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -13,7 +14,8 @@
 }
 
 .navbar h1 {
-  color: greenyellow;
+  color: lightgreen;
+  font-weight:700;
 }
 
 .navbar .links {
@@ -30,4 +32,92 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: green;
+  margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button {
+  background: lightgreen;
+  color: #333;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+   cursor: pointer;
+
+}
+
+.create button:hover {
+  background: rgb(97, 161, 97);
+}
+
+.blog {
+
+}
+
+.blog article {
+
+}
+
+.blog article h2 {
+
+}
+
+.blog article .content {
+  color: #0f0f0f;
+}
+
+.blog article button {
+  background: lightgreen;
+  color: #333;
+border: 0;
+padding: 8px;
+border-radius: 8px;
+cursor: pointer;
+
+}
+
+.blog article button:hover {
+  background: rgb(97, 161, 97);
+
+}
+
+.blog-list {
+
+}
+
+.blog-list h2 {
+  padding-top: 10px;
+}
+
+.blog-list h2:hover {
+  color: lightgreen;
+}
+
+.blog-list a {
+  text-decoration: none;
 }
